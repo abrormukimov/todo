@@ -1,26 +1,22 @@
 import './style.css';
 
-const tasks = [];
-
-const task1 = {
-  description: 'Wash the dishes',
-  completed: false,
-  index: 3,
-};
-
-const task2 = {
-  description: 'Clean my room',
-  completed: false,
-  index: 1,
-};
-
-const task3 = {
-  description: 'Make breakfast',
-  completed: false,
-  index: 2,
-};
-
-tasks.push(task1, task2, task3);
+const tasks = [
+  {
+    description: 'Wash the dishes',
+    completed: false,
+    index: 3,
+  },
+  {
+    description: 'Clean my room',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'Make breakfast',
+    completed: false,
+    index: 2,
+  },
+];
 
 const displayList = () => {
   tasks.sort((a, b) => a.index - b.index);
