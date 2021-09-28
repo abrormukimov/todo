@@ -1,13 +1,13 @@
 import './style.css';
 
-import flip from './flip';
+import flip from './flip.js';
 
 import {
   add,
   remove,
   edit,
   clear,
-} from './actions';
+} from './actions.js';
 
 let tasks = [];
 
