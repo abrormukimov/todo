@@ -1,6 +1,6 @@
 import './style.css';
 
-import flip from './task.js';
+import flip from './flip.js';
 
 let tasks = [];
 
