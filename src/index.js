@@ -61,7 +61,7 @@ const disableInput = () => {
 
 const displayList = () => {
   document.querySelector('#input-field').disabled = false;
-  getData(tasks);
+
   tasks.sort((a, b) => a.index - b.index);
   const listElement = document.querySelector('#list');
   listElement.innerHTML = '';
