@@ -1,6 +1,6 @@
-const flip = (task) => {
-  task.completed = !(task.completed);
-  return task;
+const flip = (t) => {
+  t.completed = !(t.completed);
+  return t;
 };
 
 export default flip;
