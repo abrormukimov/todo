@@ -1,13 +1,3 @@
-const add = (tasks, input) => {
-  const task = {
-    description: input,
-    completed: false,
-    index: tasks.length + 1,
-  };
-  tasks.push(task);
-  return tasks;
-};
-
 const shiftIndex = (tasks, taskIndex) => {
   tasks = tasks.map((task) => {
     if (task.index > taskIndex) {
@@ -15,6 +5,16 @@ const shiftIndex = (tasks, taskIndex) => {
     }
     return task;
   });
+  return tasks;
+};
+
+const add = (tasks, input) => {
+  const task = {
+    description: input,
+    completed: false,
+    index: tasks.length + 1,
+  };
+  tasks.push(task);
   return tasks;
 };
 
